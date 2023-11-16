@@ -27,10 +27,7 @@ async def on_ready():
 
 @client.tree.command(name="start", description="start the process for the developer badge")
 async def start(interaction: discord.Interaction):
-
-    message = f"Hi there! {interaction.user.mention},\n\nYou will be able to redeem your developer badge in 24 hours on the discord website. Please follow the link below to access the redemption page:\nhttps://discord.com/developers/active-developer \n\nHappy coding!"
- 
-    await interaction.response.send_message(message)
+    await interaction.response.send_message(f"Hi there! {interaction.user.mention},\n\nYou will be able to redeem your developer badge in 24 hours on the discord website. Please follow the link below to access the redemption page:\n\nhttps://discord.com/developers/active-developer \n\nHappy coding!")
 
 
 client.run(bottoken)
